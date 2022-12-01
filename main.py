@@ -15,3 +15,8 @@ if __name__ == '__main__':
     print_hi('PyCharm')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+#day1
+from day1 import day1
+
+day1.dayOne()
