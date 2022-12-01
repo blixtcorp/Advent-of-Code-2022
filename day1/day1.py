@@ -4,7 +4,7 @@ def get_input():
     return input_file
 
 
-def day_one():
+def dayOne():
     current_number = 0
     current_largest = 0
 
@@ -17,12 +17,12 @@ def day_one():
         if current_number > current_largest:
             current_largest = current_number
 
-    print("part1 answer:", current_largest)
+    print(current_largest)
 
 
-def day_one_part2():
+def dayOneB():
     current_number = 0
-    largest_number = 0
+    current_largest = 0
     second_largest = 0
     third_largest = 0
 
@@ -33,18 +33,14 @@ def day_one_part2():
             num = int(i)
             current_number += num
 
-        if current_number > largest_number:
-            third_largest = second_largest
-            second_largest = largest_number
-            largest_number = current_number
+        if current_number > current_largest:
+            current_largest = current_number
 
         elif second_largest < current_number:
-            third_largest = second_largest
             second_largest = current_number
 
         elif third_largest < current_number:
             third_largest = current_number
 
-    result = largest_number + second_largest + third_largest
-
-    print("part2 answer:", result)
+    result = current_largest + second_largest + third_largest
+    print(result)

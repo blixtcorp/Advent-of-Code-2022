@@ -1,5 +1,23 @@
+# This is a sample Python script.
+
+# Press Skift+F10 to execute it or replace it with your code.
+# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+
+
+def print_hi(name):
+    # Use a breakpoint in the code line below to debug your script.
+    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+
+#Hej mannen
+
+# Press the green button in the gutter to run the script.
+if __name__ == '__main__':
+    print_hi('PyCharm')
+
+# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
 #day1
 from day1 import day1
 
-day1.day_one()
-day1.day_one_part2()
+day1.dayOne()
+day1.dayOneB()
