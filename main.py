@@ -20,3 +20,4 @@ if __name__ == '__main__':
 from day1 import day1
 
 day1.dayOne()
+day1.dayOneB()
