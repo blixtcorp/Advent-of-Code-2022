@@ -1,3 +1,5 @@
+#Run main to print answers to each day, remember to replace input files since they are personal
+
 #day1
 from day1 import day1
 
