@@ -9,4 +9,7 @@ from day1 import day1
 
 #day2
 from day2 import day2
+
+print("Day two solutions")
 print(day2.day_two())
+print(day2.day_two_part2())
