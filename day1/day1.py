@@ -1,9 +1,10 @@
+#Get_input() reads and returns an input file which has been split on each \n
 def get_input():
     with open("day1/input.txt") as data:
         input_file = [i for i in data.read().split("\n")]
     return input_file
 
-
+#day_one() prints the answer to part 1 with the input files  defined in get_input()
 def day_one():
     current_number = 0
     current_largest = 0
@@ -20,6 +21,7 @@ def day_one():
     print("part1 answer:", current_largest)
 
 
+#day_one_part2() prints the answer to part 2 with the input files  defined in get_input()
 def day_one_part2():
     current_number = 0
     largest_number = 0
