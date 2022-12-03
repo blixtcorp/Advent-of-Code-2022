@@ -1,5 +1,3 @@
-from enum import Enum
-
 
 # reads input data as a list and removes whitespace
 def get_input():
@@ -24,7 +22,6 @@ def day_two_part2():
 # loops through the data and finds the correct score in the right dictionary
 def ruleset_handler(data, ruleset):
     score = 0
-
     for i in data:
         score += ruleset[i]
 
