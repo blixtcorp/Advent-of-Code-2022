@@ -9,13 +9,11 @@ def get_input():
 # day_two() gets input file and returns answer to part 1
 def day_two():
     data = get_input()
-    print("day 2 part 1:")
     return ruleset_handler(data, ruleset_one)
 
 # day_two() gets input file and returns answer to part 2
 def day_two_part2():
     data = get_input()
-    print("day 2 part 2:")
     return ruleset_handler(data, ruleset_two)
 
 

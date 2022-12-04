@@ -18,7 +18,7 @@ def day_one():
         if current_number > current_largest:
             current_largest = current_number
 
-    print("part1 answer:", current_largest)
+    return current_largest
 
 
 #day_one_part2() prints the answer to part 2 with the input files  defined in get_input()
@@ -49,4 +49,4 @@ def day_one_part2():
 
     result = largest_number + second_largest + third_largest
 
-    print("part2 answer:", result)
+    return result
