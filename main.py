@@ -26,3 +26,4 @@ from day4 import day4
 
 print("Day 4 solutions")
 print(day4.day_four())
+print(day4.day_four_part_two())
