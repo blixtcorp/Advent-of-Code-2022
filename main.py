@@ -32,6 +32,7 @@ print(day4.day_four_part_two())
 from day5 import day5
 
 print("Day 5 solutions")
+print(day5.day_five())
 
 
 #day6
