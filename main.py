@@ -31,4 +31,15 @@ print(day4.day_four_part_two())
 #day5
 from day5 import day5
 
-print("Day  solutions")
+print("Day 5 solutions")
+
+
+#day6
+from day6 import day6
+
+print ("Day 6 solutions")
+
+#day7
+from day7 import day7
+
+print ("Day 7 solutions")
