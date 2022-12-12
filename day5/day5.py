@@ -1,32 +1,41 @@
+import re
+
 def get_input():
-    with open("day5/input2.txt") as data:
-        res = [i for i in data.read().split("\n")]
+    with open("input.txt") as data:
+        res = list(map(str.strip, data.read().splitlines()))
     return res
 
-def get_stacks():
-
-    start = [
-        [],
-        ["N", "W", "B"],
-        ["B", "M", "D", "T", "P", "S", "Z", "H", "Q"],
-        ["R", "Z", "J", "V", "D", "W"],
-        ["R", "Z", "J", "V", "D", "W"],
-        ["B", "M", "H", "S"],
-        ["B", "P", "V", "H", "J", "N", "G", "L"],
-        ["S", "L", "D", "H", "H", "F", "Z", "Q", "J"],
-        ["B", "Q", "G", "J", "F", "S", "W"],
-        ["J", "D", "C", "S", "M", "W", "Z"],
-    ]
-
-    return start
 
 def day_five():
-    input_file = get_input()
+    data = get_input()
+    piles = [[], [], [], [], [], [], [], [], []]
 
-    stack = get_stacks()
+    res = []
+    for d in range(0, 8):
+        res.append(data[d].replace("[", "").replace("]", ""))
 
-    for line in input_file:
-        words = line.split()
-        move_amount = int(words[1])
-        from_stack = int(words[3])
-        to_stack = int(words[5])
+    print(res)
+
+    for i in range(0, 8):
+        for j in range(0, 9):
+            if res[i][j] != ' ' and len(res[i]) > j:
+                piles[j].insert(0, res[i][j])
+
+    for pile in piles:
+        print(pile)
+
+    counter = 0
+
+    for line in data[10:]:
+        n, f, t = list(map(int, re.split('move | from | to ', line)[1:]))
+        counter += 1
+        print(counter)
+
+        for i in range(0, n-1):
+            piles[t-1].append(piles[f-1].pop())
+
+    print(piles)
+
+day_five()
+
+
